@@ -3,30 +3,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vondo — Get Your Time Back</title>
-  <meta name="description" content="Vondo helps you automate the boring bits so you can focus on what matters.">
-  <meta name="robots" content="noindex, nofollow">
+  <title>Vondo — Site Proof | Site records, in seconds</title>
+  <meta name="description" content="Vondo builds practical tools for NZ trades. Site Proof turns on-site photos and voice notes into signed records — no typing, no evening paperwork.">
+  <meta property="og:title" content="Vondo — Site Proof">
+  <meta property="og:description" content="Site records, in seconds. Turn on-site photos and voice notes into signed records.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.vondo.co.nz">
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <!-- Shared SVG defs -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+    <defs>
+      <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#6D5BF8"/>
+        <stop offset="100%" stop-color="#1FC7E6"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
   <header>
-    <div class="logo">
-      <img src="assets/logo.svg" alt="Vondo" class="logo-img">
-      <span class="logo-text">vondo</span>
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <img src="assets/logo.svg" alt="Vondo" class="logo-img">
+        <span class="logo-text">vondo</span>
+      </a>
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="#product">Site Proof</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" id="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <main>
+
+    <!-- Hero -->
     <section class="hero">
-      <h1>Get your time back.</h1>
-      <p class="tagline">We help you automate the boring bits so you can focus on what matters.</p>
-      <a href="mailto:nick@vondo.co.nz" class="cta">Reach out to us</a>
+      <div class="container">
+        <h1>Building practical tools for New Zealand trades.</h1>
+        <p class="tagline">Vondo helps tradespeople skip the paperwork and get on with the job. Our first product is ready.</p>
+        <a href="#product" class="cta">Meet Site Proof</a>
+      </div>
     </section>
+
+    <!-- Product: Site Proof -->
+    <section id="product">
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-content">
+            <span class="badge">Our first product</span>
+            <h2 class="product-name">Site Proof</h2>
+            <p class="product-tagline">Site records, in seconds.</p>
+            <p class="product-description">NZ construction subbies write up site records at the end of the day from memory — or not at all. When head contractors ask for the paper trail, it doesn't exist.</p>
+            <p class="product-description">Site Proof fixes that. Snap a photo, tap the mic, and describe what you see. Site Proof writes the record. Review it, sign it, share it as a PDF.</p>
+            <blockquote class="promise">From pocket to signed record in under a minute. No typing on site.</blockquote>
+          </div>
+          <div class="phone-wrapper">
+            <div class="phone-glow"></div>
+            <div class="phone">
+              <div class="phone-topbar">
+                <span class="phone-topbar-title">Rimu Lane, Taupo</span>
+                <div class="phone-avatar"></div>
+              </div>
+              <div class="phone-tabs">
+                <div class="phone-tab active">H&amp;S</div>
+                <div class="phone-tab">QA</div>
+                <div class="phone-tab">Progress</div>
+              </div>
+              <div class="phone-records">
+                <div class="phone-card">
+                  <div class="phone-thumb"></div>
+                  <div class="phone-card-content">
+                    <div class="phone-card-header">
+                      <span class="phone-ref">#HS-0042</span>
+                      <span class="phone-status signed">Signed</span>
+                    </div>
+                    <div class="phone-card-title">Toolbox signed, 5 of 5 accepted</div>
+                    <div class="phone-card-area">Site-wide</div>
+                  </div>
+                </div>
+                <div class="phone-card">
+                  <div class="phone-thumb"></div>
+                  <div class="phone-card-content">
+                    <div class="phone-card-header">
+                      <span class="phone-ref">#QA-0006</span>
+                      <span class="phone-status pending">Pending</span>
+                    </div>
+                    <div class="phone-card-title">Window flashing checked</div>
+                    <div class="phone-card-area">Unit 2</div>
+                  </div>
+                </div>
+                <div class="phone-card">
+                  <div class="phone-thumb"></div>
+                  <div class="phone-card-content">
+                    <div class="phone-card-header">
+                      <span class="phone-ref">#NM-0003</span>
+                      <span class="phone-status signed">Signed</span>
+                    </div>
+                    <div class="phone-card-title">Untied ladder — resecured</div>
+                    <div class="phone-card-area">Unit 2 stair</div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-fab">
+                <div class="phone-fab-icon">
+                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="13" r="4" stroke="#fff" stroke-width="2"/>
+                  </svg>
+                </div>
+                <span class="phone-fab-text">New site record</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works">
+      <div class="container">
+        <h2 class="section-title" style="text-align:center">How it works</h2>
+        <p class="section-subtitle" style="text-align:center;margin:0 auto">Three steps. Under a minute. No typing.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="13" r="4" stroke="url(#brand-gradient)" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3 class="step-name">Snap it</h3>
+            <p class="step-desc">Open the app and take photos on site. Big buttons, gloves-on friendly.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <line x1="12" y1="19" x2="12" y2="23" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round"/>
+                <line x1="8" y1="23" x2="16" y2="23" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="step-name">Talk it</h3>
+            <p class="step-desc">Tap the mic and describe what you see. No typing with dirty hands.</p>
+          </div>
+          <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="14,2 14,8 20,8" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 15l2 2 4-4" stroke="url(#brand-gradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="step-name">Send it</h3>
+            <p class="step-desc">Site Proof writes the record. Review, sign, and share as a PDF to the head contractor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <div class="container">
+        <h2 class="section-title" style="text-align:center">Built for the site, not the office</h2>
+        <p class="section-subtitle" style="text-align:center;margin:0 auto">Skip the evening paperwork and get visibility across every job.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Built for NZ subbies</h3>
+            <p>Designed around how New Zealand subcontractors actually work. Plain language, practical flows, no system-speak.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Faster than a clipboard</h3>
+            <p>Photo plus voice note. No forms to fill out, no typing with gloves on. One-handed capture.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Covers your back</h3>
+            <p>Every record includes a photo, timestamp, GPS coordinates, and a clear write-up. Sorted.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Looks the part</h3>
+            <p>Formatted PDF with sign-off, ready to hand to the head contractor. Professional handoff, every time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support -->
+    <section id="support" class="support">
+      <div class="container">
+        <h2 class="section-title">Need a hand?</h2>
+        <p class="section-subtitle">Our support team is here to help with Site Proof or any questions about Vondo.</p>
+        <a href="mailto:support@vondo.co.nz" class="cta cta-orange" style="margin-top:1rem">Get in touch</a>
+        <p style="margin-top:1.5rem;color:var(--color-muted);font-size:0.95rem">
+          <a href="mailto:support@vondo.co.nz" class="support-email">support@vondo.co.nz</a>
+        </p>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    <p><a href="mailto:nick@vondo.co.nz">nick@vondo.co.nz</a></p>
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Vondo Limited. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="mailto:support@vondo.co.nz">support@vondo.co.nz</a></li>
+      </ul>
+    </div>
   </footer>
+
+  <script>
+    var toggle = document.getElementById('nav-toggle');
+    var menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', function () {
+      menu.classList.toggle('open');
+    });
+    document.querySelectorAll('#nav-menu a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        menu.classList.remove('open');
+      });
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          var offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 72;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>

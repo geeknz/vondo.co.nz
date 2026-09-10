@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Vondo (vondo.co.nz) — a static landing page for an automation consultancy. The pitch: "Get your time back. We help you automate the boring bits so you can focus on what matters." Contact: nick@vondo.co.nz.
+Vondo (vondo.co.nz) — company landing page for Vondo Limited, a New Zealand company building practical tools for the trades. The site features Site Proof, the first product: a mobile app for NZ construction subcontractors that turns on-site photos and voice notes into signed records. Contact: support@vondo.co.nz.
 
 ## Tech Stack
 
@@ -12,7 +12,7 @@ Plain HTML, CSS, and JavaScript. No build step, no bundler, no SSG. Files are se
 
 ## Hosting
 
-GitHub Pages, deployed from the `main` branch root. No custom domain (CNAME) configured yet — will eventually be vondo.co.nz.
+GitHub Pages, deployed from the `main` branch root. Custom domain: www.vondo.co.nz.
 
 ## Development
 
@@ -35,6 +35,7 @@ Use conventional commits with emoji prefixes. Examples:
 
 ## Structure
 
-- `index.html` — single-page landing
-- `styles.css` — site styles (linked from index.html, not inline)
+- `index.html` — multi-section landing page featuring Site Proof
+- `privacy-policy.html` — privacy policy (required for Apple App Store)
+- `styles.css` — site styles (linked from both HTML pages)
 - `assets/` — logo and images
