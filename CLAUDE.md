@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Vondo (vondo.co.nz) — company landing page for Vondo Limited, a New Zealand company building practical tools for the trades. The site features Site Proof, the first product: a mobile app for NZ construction subcontractors that turns on-site photos and voice notes into signed records. Contact: support@vondo.co.nz.
+Vondo (vondo.co.nz) — company site for Vondo Limited, a New Zealand company that makes small companies punch like large ones: websites, custom software, fractional leadership and IT support. Site Proof (a mobile app for NZ construction subcontractors that turns on-site photos and voice notes into signed records) is Vondo's own product and appears as a case study. Contact: support@vondo.co.nz.
 
 ## Tech Stack
 
@@ -35,7 +35,12 @@ Use conventional commits with emoji prefixes. Examples:
 
 ## Structure
 
-- `index.html` — multi-section landing page featuring Site Proof
-- `privacy-policy.html` — privacy policy (required for Apple App Store)
-- `styles.css` — site styles (linked from both HTML pages)
-- `assets/` — logo and images
+- `index.html` — home page
+- `services.html`, `case-studies.html`, `about.html`, `contact.html` — content pages
+- `privacy-policy.html` — Site Proof privacy policy (required for Apple App Store; keep this URL stable)
+- `404.html` — not-found page (served by GitHub Pages)
+- `styles.css` — site styles (shared by all pages)
+- `main.js` — theme toggle and footer year (shared by all pages)
+- `assets/` — favicon and images
+
+The header and footer are duplicated in every HTML page; when changing them, update all pages. Links are root-relative (`/about.html`), so preview via the local server rather than opening files directly.
